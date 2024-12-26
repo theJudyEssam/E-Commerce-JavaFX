@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="246.0" style="-fx-background-color: #E5D9F2;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce_java_proj.controllers.SignIN">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" text="Start your journey now ~★" textFill="#7e5cad">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="82.0" text="Full Name" textFill="#7e5cad">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="82.0" text="Username" textFill="#7e5cad">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="136.0" text="Email" textFill="#7e5cad">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="136.0" text="Password" textFill="#7e5cad">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="183.0" text="Phone Number" textFill="#7e5cad">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="183.0" text="Age" textFill="#7e5cad">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fullname" layoutX="14.0" layoutY="102.0" prefHeight="20.0" prefWidth="90.0" style="-fx-border-color: purple;">
+         <font>
+            <Font name="Book Antiqua" size="8.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="134.0" layoutY="153.0" prefHeight="9.0" prefWidth="96.0" style="-fx-border-color: purple;">
+         <font>
+            <Font name="Book Antiqua" size="8.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="username" layoutX="134.0" layoutY="102.0" prefHeight="17.0" prefWidth="96.0" style="-fx-border-color: purple;">
+         <font>
+            <Font name="Book Antiqua" size="8.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="14.0" layoutY="153.0" prefHeight="9.0" prefWidth="90.0" style="-fx-border-color: purple;">
+         <font>
+            <Font name="Book Antiqua" size="8.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phone_number" layoutX="14.0" layoutY="199.0" prefHeight="11.0" prefWidth="90.0" style="-fx-border-color: purple;">
+         <font>
+            <Font name="Book Antiqua" size="8.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="age" layoutX="134.0" layoutY="199.0" prefHeight="20.0" prefWidth="96.0" style="-fx-border-color: purple;">
+         <font>
+            <Font name="Book Antiqua" size="8.0" />
+         </font>
+      </TextField>
+      <Button layoutX="93.0" layoutY="240.0" mnemonicParsing="false" onAction="#Register" style="-fx-background-color: #A294F9;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="66.0" layoutY="279.0" text="already have an account? log in!" textFill="#6e26e2">
+         <font>
+            <Font name="Book Antiqua" size="8.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="108.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="498.0" style="-fx-background-color: #F5EFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce_java_proj.controllers.Shopping_Cart">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="498.0" style="-fx-background-color: #E5D9F2;">
+         <children>
+            <Button fx:id="Account" layoutX="386.0" layoutY="21.0" mnemonicParsing="false" onAction="#Account" style="-fx-background-color: #A294F9;" text="Your Account" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="58.0" layoutY="25.0" text="Judy's Shop of Oddities and Curiosities" textFill="#8114b7">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="Home" layoutX="324.0" layoutY="21.0" mnemonicParsing="false" onAction="#Home" style="-fx-background-color: #A294F9;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+         <ScrollPane fx:id="scrollP" fitToHeight="true" fitToWidth="true" layoutX="18.0" layoutY="78.0" prefHeight="245.0" prefWidth="463.0">
+            <GridPane fx:id="ProductGridPane" hgap="10" minHeight="242.0" prefHeight="243.0" prefWidth="443.0" style="-fx-background-color: #F5EFFF;" vgap="10">
+               <!-- Product items will be added here dynamically -->
+            </GridPane>
+         </ScrollPane>
+
+      <Button layoutX="153.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: #A294F9;" text="Checkout" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="249.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: #A294F9;" text="Clear Cart" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

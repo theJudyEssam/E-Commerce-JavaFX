@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="552.0" style="-fx-background-color: #F5EFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce_java_proj.controllers.Retailer_Page">
+   <children>
+      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="64.0" prefWidth="558.0" style="-fx-background-color: #E5D9F2;">
+         <children>
+            <Label layoutX="74.0" layoutY="23.0" text="Judy's Shop of Oddities and Curiosities" textFill="#8114b7">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="12.0" />
+               </font></Label>
+            <Button fx:id="Add_Product" layoutX="451.0" layoutY="20.0" mnemonicParsing="false" onAction="#Add_Product" style="-fx-background-color: #A294F9;" text="New Product" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="46.0" fitWidth="49.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ScrollPane layoutX="14.0" layoutY="72.0" prefHeight="319.0" prefWidth="533.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

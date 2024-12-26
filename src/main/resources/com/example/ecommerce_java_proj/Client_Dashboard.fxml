@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="330.0" prefWidth="619.0" style="-fx-background-color: #F5EFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce_java_proj.controllers.Client_Dashboard">
+   <children>
+      <Pane prefHeight="58.0" prefWidth="619.0" style="-fx-background-color: #E5D9F2;">
+         <children>
+            <Button layoutX="426.0" layoutY="16.0" mnemonicParsing="false" onAction="#Cart" style="-fx-background-color: #A294F9;" text="Your Cart" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font></Button>
+            <Button layoutX="505.0" layoutY="16.0" mnemonicParsing="false" onAction="#Account" style="-fx-background-color: #A294F9;" text="Your Account" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font></Button>
+            <Label layoutX="65.0" layoutY="20.0" text="Judy's Shop of Oddities and Curiousities" textFill="#b3029b">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="68.0" prefHeight="83.0" prefWidth="592.0" style="-fx-border-color: purple;">
+         <children>
+            <Label layoutX="15.0" layoutY="-7.0" prefHeight="90.0" prefWidth="563.0" text="Welcome to Judy's Shop of Oddities and Curiosities, where you'll find everything that is odd and curious! Relax and scroll through our vast selection of spells, potions, magical creatures, and much more! Here, we provide everything that's just beyond your reach! Need to book a permanent business vacation for your unwanted relative? We've got you covered. Want a magical cat that speaks Chinese? You bet we have it!" textAlignment="RIGHT" textFill="#563a9c" wrapText="true">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+       <VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml" />
+        <ScrollPane fx:id="scrollP" fitToHeight="true" fitToWidth="true" layoutX="32.0" layoutY="161.0" prefHeight="155.0" prefWidth="556.0">
+            <GridPane fx:id="ProductGridPane" hgap="10" minHeight="400" style="-fx-background-color: #E5D9F2;" vgap="10">
+                   <!-- Product items will be added here dynamically -->
+               </GridPane>
+        </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane centerShape="false" prefHeight="292.0" prefWidth="579.0" style="-fx-background-color: #F5EFFF; -fx-border-color: purple;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce_java_proj.controllers.Product_Page">
+   <children>
+      <Pane prefHeight="46.0" prefWidth="596.0" style="-fx-background-color: #E5D9F2;">
+         <children>
+            <Button fx:id="Home" layoutX="380.0" layoutY="11.0" mnemonicParsing="false" onAction="#Home" style="-fx-background-color: #A294F9;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Cart" layoutX="457.0" layoutY="11.0" mnemonicParsing="false" onAction="#Cart" style="-fx-background-color: #A294F9;" text="Your Account" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="57.0" layoutY="15.0" text="Judy's Shop of Oddities and Curiosities" textFill="#8114b7">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="10.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ImageView fx:id="image_path" fitHeight="186.0" fitWidth="223.0" layoutX="32.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://thezombieshuffle.com/wp-content/uploads/2015/06/magic-sword.jpg?w=1024" />
+         </image>
+      </ImageView>
+      <Label fx:id="product_name" layoutX="263.0" layoutY="80.0" text="Magical Sword" textFill="#683294">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="product_description" layoutX="263.0" layoutY="114.0" prefHeight="119.0" prefWidth="299.0" text="This is a magical sword, I do not remember where i got it from,but it was from somewhere in alaska. I think a dude got directly from his dream, cool right? " textFill="#900fa1" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="10.0" />
+         </font></Label>
+      <Label fx:id="product_id" layoutX="262.0" layoutY="99.0" text="#23423" textFill="#91439f">
+         <font>
+            <Font name="Book Antiqua Italic" size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="cart_button" layoutX="263.0" layoutY="114.0" mnemonicParsing="false" onAction="#cart_actions" prefHeight="20.0" prefWidth="66.0" style="-fx-background-color: #EFB6C8;" text="Add to Cart" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="9.0" />
+         </font>
+      </Button>
+      <Label fx:id="category" layoutX="263.0" layoutY="64.0" text="Category" textFill="#e571e9">
+         <font>
+            <Font name="Book Antiqua Italic" size="8.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="price" layoutX="264.0" layoutY="216.0" text="1232$" textFill="#66116b">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

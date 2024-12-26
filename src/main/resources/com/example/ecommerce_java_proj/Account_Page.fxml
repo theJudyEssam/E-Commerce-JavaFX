@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="326.0" prefWidth="260.0" style="-fx-background-color: #F5EFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce_java_proj.controllers.Account_Page">
+   <children>
+      <ImageView fitHeight="93.0" fitWidth="103.0" layoutX="81.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="full_name" layoutX="76.0" layoutY="144.0" text="Account Name" textFill="#5c0962">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="180.0" text="Username" textFill="#7b1471">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="209.0" text="Email" textFill="#7b1471">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="238.0" text="Age" textFill="#7b1471">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="266.0" text="Phone Number" textFill="#7b1471">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="97.0" layoutY="180.0" text="Username" textFill="#ae16a2">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" layoutX="70.0" layoutY="209.0" text="Username" textFill="#ae16a2">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="age" layoutX="70.0" layoutY="238.0" text="Username" textFill="#ae16a2">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="phone_number" layoutX="124.0" layoutY="266.0" text="Username" textFill="#ae16a2">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-color: #A294F9;" text="↼" textFill="WHITE" />
+   </children>
+</AnchorPane>
