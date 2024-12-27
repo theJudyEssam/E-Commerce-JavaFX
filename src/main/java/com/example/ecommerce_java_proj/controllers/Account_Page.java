@@ -35,6 +35,7 @@ public class Account_Page {
 
     }
 
+
     public void GoBack(){
         if(User_Session.user_id == 1){
             SceneManager.getInstance().switchScene("/com/example/ecommerce_java_proj/Retailer_Page.fxml");
@@ -44,4 +45,11 @@ public class Account_Page {
 
         }
     }
+
+
+    public void log_out(){
+        SceneManager.getInstance().switchScene("/com/example/ecommerce_java_proj/Log_IN.fxml");
+
+    }
+
 }

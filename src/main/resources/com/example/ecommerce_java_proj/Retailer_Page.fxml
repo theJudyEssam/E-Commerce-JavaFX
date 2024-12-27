@@ -24,10 +24,15 @@
             </ImageView>
          </children>
       </Pane>
-      <ScrollPane layoutX="14.0" layoutY="72.0" prefHeight="319.0" prefWidth="533.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-        </content>
+      <ScrollPane fx:id="scrollP" fitToHeight="true" fitToWidth="true" layoutX="6.0" layoutY="75.0" prefHeight="270.0" prefWidth="544.0">
+         <GridPane fx:id="ProductGridPane" hgap="10" minHeight="-Infinity" style="-fx-background-color: #E5D9F2;" vgap="10">
+            <!-- Product items will be added here dynamically -->
+         </GridPane>
       </ScrollPane>
+      <Button fx:id="Add_Product1" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#log_out" style="-fx-background-color: #A294F9;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
