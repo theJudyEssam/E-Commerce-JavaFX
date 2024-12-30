@@ -35,7 +35,7 @@
             <Font name="Lucida Calligraphy Italic" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="product_description" layoutX="263.0" layoutY="125.0" prefHeight="80.0" prefWidth="299.0" text="This is a magical sword, I do not remember where i got it from,but it was from somewhere in alaska. I think a dude got directly from his dream, cool right? " textFill="#900fa1" wrapText="true">
+      <Label fx:id="product_description" layoutX="262.0" layoutY="90.0" prefHeight="188.0" prefWidth="299.0" text="This is a magical sword, I do not remember where i got it from,but it was from somewhere in alaska. I think a dude got directly from his dream, cool right?  They say that this sword can speak in multiple languaes, but when i tried to talk to it. I discovered that it can only speak in a specific Egyptian Dialict. It also curses like a sailor" textFill="#900fa1" wrapText="true">
          <font>
             <Font name="Book Antiqua" size="10.0" />
          </font></Label>
@@ -44,7 +44,7 @@
             <Font name="Book Antiqua Italic" size="10.0" />
          </font>
       </Label>
-      <Button fx:id="cart_button" layoutX="263.0" layoutY="114.0" mnemonicParsing="false" onAction="#cart_actions" prefHeight="20.0" prefWidth="66.0" style="-fx-background-color: #EFB6C8;" text="Add to Cart" textFill="WHITE">
+      <Button fx:id="cart_button" layoutX="327.0" layoutY="243.0" mnemonicParsing="false" onAction="#cart_actions" prefHeight="20.0" prefWidth="66.0" style="-fx-background-color: #EFB6C8;" text="Add to Cart" textFill="WHITE">
          <font>
             <Font name="Book Antiqua" size="9.0" />
          </font>
@@ -59,7 +59,7 @@
             <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
          </image>
       </ImageView>
-      <Label fx:id="price" layoutX="264.0" layoutY="216.0" text="1232$" textFill="#66116b">
+      <Label fx:id="price" layoutX="262.0" layoutY="240.0" text="1232$" textFill="#66116b">
          <font>
             <Font name="Book Antiqua" size="19.0" />
          </font>

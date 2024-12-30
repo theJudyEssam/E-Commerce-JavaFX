@@ -1,0 +1,16 @@
+ORDER DETAILS : 
+Order 1: Frog O' Wisdom Q: 1 Price:420.00 
+-----------------------------------------------
+Order 2: An eye in a potion Q: 1 Price:75.00 
+-----------------------------------------------
+Order 3: Mermaid Tears Q: 1 Price:123.00 
+-----------------------------------------------
+Order 4: FUGLER Q: 1 Price:0.00 
+-----------------------------------------------
+Order 5: Dreamt Sword Q: 1 Price:1232.00 
+-----------------------------------------------
+
+Calculated Total: 1850.00 
+Order was created successfully and should arrive in 2-3 non-business days 
+ WARNING: THE DELIVERYMAN IS NOT HUMAN, DO NOT TALK TO HIM, FOR HE IS NOT FOND OF YOUR KIND. ⊙.☉ 
+Thanks and can't wait for you next order ╰(*°▽°*)╯

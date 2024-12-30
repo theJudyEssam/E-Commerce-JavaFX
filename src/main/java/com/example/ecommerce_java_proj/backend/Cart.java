@@ -26,7 +26,7 @@ public class Cart {
             }
         }
         catch(SQLException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return false;
     }
@@ -54,7 +54,8 @@ public class Cart {
 
         }
         catch(SQLException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+
         }
 
 
@@ -78,7 +79,7 @@ public class Cart {
             }
         }
         catch(SQLException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         return removed;
@@ -124,12 +125,67 @@ public class Cart {
 
         }
         catch(SQLException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+
         }
 
         return false;
     }
 
+    public static boolean clear_cart(int user_id){
+        String query = "DELETE FROM shopping_cart WHERE user_id = ?";
+        boolean deleted =false;
 
+        try(Connection connection = database_connection.getConnection();
+            PreparedStatement stat = connection.prepareStatement(query)
+        ){
+            stat.setInt(1, user_id);
+            int rows = stat.executeUpdate();
+            if(rows > 0){
+                deleted = true;
+                System.out.println("Cleared Cart");
+            }
+
+
+        }
+        catch(SQLException e ){
+            System.out.println(e.getMessage());
+
+        }
+
+
+        return deleted;
+    }
+
+    public static String checkout(int user_id){
+        Order o = new Order(user_id);
+        return o.orderP;
+        //khalas keda mesh me7taga a3ml haga tanya, the Order class figures everything out
+    }
+
+
+    public static boolean editQuantity(int user_id,int product_id, int new_quantity){
+        boolean edited = false;
+        String query = "UPDATE shopping_cart SET quantity = ? WHERE user_id = ? and product_id = ?";
+
+        try(Connection connection = database_connection.getConnection();
+            PreparedStatement statement = connection.prepareStatement(query)){
+
+            statement.setInt(1, new_quantity);
+            statement.setInt(2, user_id);
+            statement.setInt(3, product_id);
+            int rows = statement.executeUpdate();
+            if(rows > 0){
+                edited = true;
+                System.out.println("Edited.");
+            }
+
+        }
+        catch(SQLException e){
+            System.out.println(e.getMessage());
+        }
+
+        return false;
+    }
 
 }

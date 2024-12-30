@@ -113,19 +113,19 @@ public class Product {
             PreparedStatement stat = connection.prepareStatement(query)
         )
         {
-           stat.setInt(1, id);
-           ResultSet resultSet = stat.executeQuery();
-           if(resultSet.next()){
-               String p_name = resultSet.getString("product_name");
-               String p_id = resultSet.getString("product_id");
-               String p_path = resultSet.getString("image_path");
-               String p_desc = resultSet.getString("description");
-               String p_category = resultSet.getString("category");
-               float price= resultSet.getFloat("price");
+            stat.setInt(1, id);
+            ResultSet resultSet = stat.executeQuery();
+            if(resultSet.next()){
+                String p_name = resultSet.getString("product_name");
+                String p_id = resultSet.getString("product_id");
+                String p_path = resultSet.getString("image_path");
+                String p_desc = resultSet.getString("description");
+                String p_category = resultSet.getString("category");
+                float price= resultSet.getFloat("price");
 
-               new_product = new Product(p_id, p_name, p_path, p_desc, p_category, price);
+                new_product = new Product(p_id, p_name, p_path, p_desc, p_category, price);
 
-           }
+            }
 
         }
         catch (SQLException e){

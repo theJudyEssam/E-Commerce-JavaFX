@@ -23,9 +23,5 @@ public class Customer extends User implements Operations  {
         //edits
     }
 
-    public void Checkout(){
-
-    }
-
 
 }
