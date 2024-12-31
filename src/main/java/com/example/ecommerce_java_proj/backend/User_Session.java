@@ -6,7 +6,7 @@ public class User_Session {
     //god bless GeeksforGeeks
 
 
-    public static String full_name, username, email, age, password, phone;
+    public static String full_name, username, email, age, phone;
     public static int user_id;
 //    public User_Session(String user_id ,String full_name, String username, String email, String age, String password, String phone){
 //        this.age  = age;

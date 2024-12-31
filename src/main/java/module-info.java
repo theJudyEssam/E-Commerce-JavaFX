@@ -3,6 +3,7 @@ module com.example.ecommerce_java_proj {
     requires javafx.fxml;
     requires java.sql;
     requires java.desktop;
+    requires spring.security.crypto;
 
 
     opens com.example.ecommerce_java_proj to javafx.fxml;

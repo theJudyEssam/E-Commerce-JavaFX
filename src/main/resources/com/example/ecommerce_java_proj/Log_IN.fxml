@@ -14,10 +14,6 @@
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <TextField fx:id="password" layoutX="57.0" layoutY="184.0" style="-fx-border-color: purple;">
-         <font>
-            <Font name="Book Antiqua" size="10.0" />
-         </font></TextField>
       <TextField fx:id="username" layoutX="57.0" layoutY="126.0" style="-fx-border-color: purple;">
          <font>
             <Font name="Book Antiqua" size="10.0" />
@@ -47,5 +43,10 @@
             <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
          </image>
       </ImageView>
+      <PasswordField fx:id="password" layoutX="60.0" layoutY="184.0" style="-fx-border-color: purple;">
+         <font>
+            <Font name="Book Antiqua" size="10.0" />
+         </font>
+      </PasswordField>
    </children>
 </AnchorPane>

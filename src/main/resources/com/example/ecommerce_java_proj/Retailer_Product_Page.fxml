@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce_java_proj.controllers.Retailer_Product_Page">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce_java_proj.controllers.Retailer_Product_Page">
    <top>
       <Pane prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #E5D9F2;" BorderPane.alignment="CENTER">
          <children>
@@ -32,26 +32,26 @@
                <image>
                   <Image url="https://thezombieshuffle.com/wp-content/uploads/2015/06/magic-sword.jpg?w=1024" />
                </image></ImageView>
-            <Label fx:id="product_name" layoutX="286.0" layoutY="37.0" text="Product Name" textFill="#4535c1">
+            <Label fx:id="product_name" layoutX="283.0" layoutY="38.0" text="Product Name" textFill="#4535c1">
                <font>
                   <Font name="Lucida Calligraphy Italic" size="12.0" />
                </font></Label>
-            <Label fx:id="price" layoutX="286.0" layoutY="60.0" prefHeight="17.0" prefWidth="38.0" text="16000000" textFill="#72146d">
+            <Label fx:id="price" layoutX="300.0" layoutY="60.0" prefHeight="17.0" prefWidth="38.0" text="16000000" textFill="#72146d">
                <font>
                   <Font name="Book Antiqua" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="description" layoutX="285.0" layoutY="37.0" prefHeight="248.0" prefWidth="270.0" text="This product issss cool This product issss cool This product issss cool This product issss cool This product issss cool This product issss cool This product issss coolThis product issss cool This product issss cool " textFill="#d71dcd" wrapText="true" BorderPane.alignment="TOP_CENTER">
+            <Label fx:id="description" layoutX="281.0" layoutY="14.0" prefHeight="248.0" prefWidth="270.0" text="This product issss cool This product issss cool This product issss cool This product issss cool This product issss cool This product issss cool This product issss coolThis product issss cool This product issss cool " textFill="#d71dcd" wrapText="true" BorderPane.alignment="TOP_CENTER">
                <font>
                   <Font name="Book Antiqua" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="category" layoutX="333.0" layoutY="21.0" text="Category" textFill="#4c1649">
+            <Label fx:id="category" layoutX="281.0" layoutY="77.0" text="Category" textFill="#4c1649">
                <font>
-                  <Font name="Book Antiqua" size="12.0" />
+                  <Font name="Book Antiqua Italic" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="product_id" layoutX="294.0" layoutY="21.0" text="Id" textFill="#72136d">
+            <Label fx:id="product_id" layoutX="292.0" layoutY="21.0" text="Id" textFill="#72136d">
                <font>
                   <Font name="Book Antiqua" size="12.0" />
                </font>
@@ -61,12 +61,12 @@
                   <Font name="Book Antiqua" size="12.0" />
                </font>
             </Button>
-            <Label fx:id="product_id1" layoutX="281.0" layoutY="21.0" text="#" textFill="#d71dcd">
+            <Label fx:id="product_id1" layoutX="281.0" layoutY="21.0" prefHeight="17.0" prefWidth="17.0" text="#" textFill="#d71dcd">
                <font>
                   <Font name="Book Antiqua" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="price1" layoutX="317.0" layoutY="60.0" text="LE" textFill="#72146d">
+            <Label fx:id="price1" layoutX="281.0" layoutY="60.0" prefHeight="17.0" prefWidth="49.0" text="LE" textFill="#72146d">
                <font>
                   <Font name="Book Antiqua" size="12.0" />
                </font>

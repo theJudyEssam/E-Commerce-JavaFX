@@ -30,36 +30,40 @@ public class User {
         this.password = password;
     }
 
-    static boolean is_customer(){
-        boolean customer = true;
-
-
-        return customer;
-
-    }
 
     public boolean log_in(){
         boolean logged_in = false;
-        String checkUser = "SELECT * FROM users WHERE username = ? AND password = ?";
+        String checkUser = "SELECT * FROM users WHERE username = ?";
 
         try (Connection connection = database_connection.getConnection()) {
 
             try (PreparedStatement checkUserQ = connection.prepareStatement(checkUser)) {
                 checkUserQ.setString(1, username);
-                checkUserQ.setString(2, password);
+
 
                 try (ResultSet resultSet = checkUserQ.executeQuery()) {
+
                     if (resultSet.next()) {
-                        System.out.println("Welcome Back!");
-                        put_in_static(username);
-                        logged_in = true;
+                        try{
+                            String hashed_password =  resultSet.getString("password");
+                            if(PasswordHash.verifyPassword(password, hashed_password)){
+                                System.out.println("Welcome Back!");
+                                put_in_static(username);
+                                logged_in = true;
+                            }
+                        }
+                        catch(Exception e){ // cauze to be fair, ion know what type of error that would be
+                            System.out.println(e.getMessage());
+                        }
+
+
                     }
                 }
             }
 
         }
         catch(SQLException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         if(logged_in == false){
@@ -74,7 +78,7 @@ public class User {
         String checkUserSql = "SELECT * FROM users WHERE username = ?";
         String insertUserSql = "INSERT INTO users (username, password, age, phone_num, fullname, email) VALUES (?, ?, ?, ?, ?, ?)";
         boolean registered = false;
-
+        String encrypted_pass = PasswordHash.hashPassword(password);
         try (Connection connection = database_connection.getConnection()) {
 
             try (PreparedStatement checkUserStmt = connection.prepareStatement(checkUserSql)) {
@@ -90,7 +94,7 @@ public class User {
 
             try (PreparedStatement insertUserStmt = connection.prepareStatement(insertUserSql)) {
                 insertUserStmt.setString(1, username);
-                insertUserStmt.setString(2, password);
+                insertUserStmt.setString(2, encrypted_pass);
                 insertUserStmt.setString(3, age);
                 insertUserStmt.setString(4, phone);
                 insertUserStmt.setString(5, full_name);
@@ -104,7 +108,10 @@ public class User {
             }
         }
         catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("An sql xception: \n" + e.getMessage());
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
         }
 
         return registered;
@@ -134,7 +141,6 @@ public class User {
                     User_Session.full_name =fullName;
                     User_Session.user_id = user_id;
                     User_Session.username = username;
-                    User_Session.password = password;
 
                 } else {
                     System.out.println("No user found with username: " + username);

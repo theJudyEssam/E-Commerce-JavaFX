@@ -9,12 +9,12 @@
    <children>
       <Pane prefHeight="46.0" prefWidth="596.0" style="-fx-background-color: #E5D9F2;">
          <children>
-            <Button fx:id="Home" layoutX="380.0" layoutY="11.0" mnemonicParsing="false" onAction="#Home" style="-fx-background-color: #A294F9;" text="Home" textFill="WHITE">
+            <Button fx:id="Home" layoutX="417.0" layoutY="11.0" mnemonicParsing="false" onAction="#Home" style="-fx-background-color: #A294F9;" text="Home" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="Cart" layoutX="457.0" layoutY="11.0" mnemonicParsing="false" onAction="#Cart" style="-fx-background-color: #A294F9;" text="Your Account" textFill="WHITE">
+            <Button fx:id="Account" layoutX="481.0" layoutY="11.0" mnemonicParsing="false" onAction="#Cart" style="-fx-background-color: #A294F9;" text="Your Account" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="12.0" />
                </font>
@@ -39,12 +39,12 @@
          <font>
             <Font name="Book Antiqua" size="10.0" />
          </font></Label>
-      <Label fx:id="product_id" layoutX="262.0" layoutY="99.0" text="#23423" textFill="#91439f">
+      <Label fx:id="product_id" layoutX="265.0" layoutY="102.0" text="7" textFill="#91439f">
          <font>
             <Font name="Book Antiqua Italic" size="10.0" />
          </font>
       </Label>
-      <Button fx:id="cart_button" layoutX="327.0" layoutY="243.0" mnemonicParsing="false" onAction="#cart_actions" prefHeight="20.0" prefWidth="66.0" style="-fx-background-color: #EFB6C8;" text="Add to Cart" textFill="WHITE">
+      <Button fx:id="cart_button" layoutX="259.0" layoutY="115.0" mnemonicParsing="false" onAction="#cart_actions" prefHeight="20.0" prefWidth="66.0" style="-fx-background-color: #EFB6C8;" text="Add to Cart" textFill="WHITE">
          <font>
             <Font name="Book Antiqua" size="9.0" />
          </font>
@@ -59,7 +59,17 @@
             <Image url="https://i.ibb.co/fv5j5xk/download-6.png" />
          </image>
       </ImageView>
-      <Label fx:id="price" layoutX="262.0" layoutY="240.0" text="1232$" textFill="#66116b">
+      <Label fx:id="price" layoutX="279.0" layoutY="240.0" text="1200" textFill="#66116b">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="product_id1" layoutX="260.0" layoutY="102.0" prefHeight="13.0" prefWidth="18.0" text="#" textFill="#91439f">
+         <font>
+            <Font name="Book Antiqua Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="price1" layoutX="266.0" layoutY="240.0" prefHeight="25.0" prefWidth="25.0" text="\$" textFill="#66116b">
          <font>
             <Font name="Book Antiqua" size="19.0" />
          </font>
