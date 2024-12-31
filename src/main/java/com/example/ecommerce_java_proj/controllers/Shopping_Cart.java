@@ -90,6 +90,7 @@ public class Shopping_Cart {
 
                         if(new_quantity == 0){
                             Cart.delete_from_cart(new CartItem(User_Session.user_id, user_cart.get(finalI).product_id ));
+                            SceneManager.getInstance().switchScene("/com/example/ecommerce_java_proj/Shopping_Cart.fxml");
                         }
                         else{
                             Cart.editQuantity(User_Session.user_id,user_cart.get(finalI1).product_id, new_quantity);
