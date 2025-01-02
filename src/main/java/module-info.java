@@ -4,6 +4,7 @@ module com.example.ecommerce_java_proj {
     requires java.sql;
     requires java.desktop;
     requires spring.security.crypto;
+    requires io.github.cdimascio.dotenv.java;
 
 
     opens com.example.ecommerce_java_proj to javafx.fxml;

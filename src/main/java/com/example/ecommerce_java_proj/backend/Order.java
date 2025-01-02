@@ -7,7 +7,11 @@ import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Order {
+interface Operations{
+    public default void calculate_price(int user_id){}
+}
+
+public class Order implements Operations {
 
     public static ArrayList<CartItem> o = new ArrayList<>();
     public static float order_sum;
@@ -45,8 +49,6 @@ public class Order {
             }
         }
 
-
-
         StringBuilder s = OrderString();
         String st = s.toString();
         orderP= st;
@@ -77,6 +79,7 @@ public class Order {
         }
         order.append(String.format("\nCalculated Total: %.2f \n", order_sum));
         order.append("Order was created successfully and should arrive in 2-3 non-business days \n " +
+                "No need to tell us your address, we know. \n" +
                 "WARNING: THE DELIVERYMAN IS NOT HUMAN, DO NOT TALK TO HIM, FOR HE IS NOT FOND OF YOUR KIND. ⊙.☉" +
                 " \nThanks and can't wait for you next order ╰(*°▽°*)╯");
 

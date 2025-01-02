@@ -37,13 +37,9 @@ public class Account_Page {
 
 
     public void GoBack(){
-        if(User_Session.user_id == 1){
-            SceneManager.getInstance().switchScene("/com/example/ecommerce_java_proj/Retailer_Page.fxml");
-        }
-        else{
-            SceneManager.getInstance().switchScene("/com/example/ecommerce_java_proj/Client_Dashboard.fxml");
 
-        }
+        SceneManager.getInstance().switchScene("/com/example/ecommerce_java_proj/Client_Dashboard.fxml");
+
     }
 
 

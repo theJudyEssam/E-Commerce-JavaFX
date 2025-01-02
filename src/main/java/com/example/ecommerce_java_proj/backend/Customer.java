@@ -1,10 +1,9 @@
 package com.example.ecommerce_java_proj.backend;
 
-interface Operations{
-}
 
 
-public class Customer extends User implements Operations  {
+
+public class Customer extends User  {
 
 
     public static void add(int product_id, int user_id){

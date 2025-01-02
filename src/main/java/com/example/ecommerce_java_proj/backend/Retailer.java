@@ -2,6 +2,8 @@ package com.example.ecommerce_java_proj.backend;
 
 
 
+
+
 public class Retailer extends User  {
 
     public static void add(String product_name, float price, String image_path, String description, String category){

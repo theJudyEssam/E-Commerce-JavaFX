@@ -16,9 +16,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.concurrent.Task;
-
 import javax.swing.*;
-
 import java.util.ArrayList;
 
 

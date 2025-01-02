@@ -103,6 +103,7 @@ public class User {
                 int rows = insertUserStmt.executeUpdate();
                 if (rows > 0) {
                     System.out.println("User registration successful!");
+                    put_in_static(username);
                     registered = true;
                 }
             }
@@ -155,7 +156,15 @@ public class User {
     }
 
 
+    public static void add(){
+        // this will be overloaded by its _kids_
+    }
 
+    public static void delete(){
+        // this will be overloaded by its _kids_
+    }
+
+    // hasn't been implemented yet
     public boolean validates(){
         return false;
     }
