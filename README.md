@@ -51,4 +51,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ---
 
 ## Contact
-For questions or feedback, feel free to reach out to [judy.essam@example.com].
+For questions or feedback, feel free to reach out to [judy.essam@gmail.com].
