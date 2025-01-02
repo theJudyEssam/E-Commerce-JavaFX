@@ -102,7 +102,7 @@ public class Cart {
         for(int i =0; i < cart.size();i++){
             int product_id = cart.get(i).product_id;
             Product p = Product.get_one_product(product_id);
-            sum += p.price;
+            sum += p.price * Integer.parseInt(cart.get(i).quantity);
         }
 
         return sum;

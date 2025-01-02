@@ -55,7 +55,7 @@ public class Product_Page {
 
     public void Account(ActionEvent actionEvent)
     {
-        SceneManager.getInstance().switchScene("/com/example/ecommerce_java_proj/Shopping_Cart.fxml");
+        SceneManager.getInstance().switchScene("/com/example/ecommerce_java_proj/Account_Page.fxml");
     }
 
     public void Home(ActionEvent actionEvent)

@@ -76,8 +76,9 @@ public class Shopping_Cart {
 
                         quantity.setText(String.valueOf(new_quantity));
 
-                        float newTotal = Cart.calculate_total(User_Session.user_id);
-                        total_price.setText(String.valueOf(newTotal));
+
+                        float new_sum = Cart.calculate_total(User_Session.user_id);
+                        total_price.setText(String.valueOf(new_sum));
                     });
 
                     Button subtractButton = new Button("-");
@@ -100,6 +101,9 @@ public class Shopping_Cart {
                             float newTotal = Cart.calculate_total(User_Session.user_id);
                             total_price.setText(String.valueOf(newTotal));
                         }
+
+                        float new_sum = Cart.calculate_total(User_Session.user_id);
+                        total_price.setText(String.valueOf(new_sum));
 
                     });
 
